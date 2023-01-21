@@ -1,0 +1,11 @@
+const orderList = document.getElementById("orders");
+const marinara = document.createElement("li");
+marinara.innerHTML = "1 Pizza marinara";
+orderList.appendChild(marinara);
+var romana = document.createElement("li");
+romana.innerHTML = "1 Pizza Romana, extra anchovies";
+orderList.appendChild(romana);
+const readyList = document.getElementById("ready");
+const magherita = document.getElementById("magherita");
+orderList.removeChild(magherita);
+readyList.appendChild(magherita);
